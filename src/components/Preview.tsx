@@ -177,7 +177,7 @@ export function Preview({ state }: PreviewProps) {
                 className="uppercase tracking-widest text-xs font-bold mb-6" 
                 style={{ color: heroSubheadingColor }}
               >
-                {state.designFeel.join(' • ') || 'Design System Playground'}
+                {state.designFeel.join(' • ') || 'BrandAlchemist'}
               </h4>
               
               <h1 

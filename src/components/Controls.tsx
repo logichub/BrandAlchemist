@@ -64,14 +64,15 @@ export function Controls({ state, savedProjects, saveCurrentProject, loadProject
       <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_-10px_rgba(0,0,0,0.08)] border-b border-[#E5E1D9]">
         <div className="p-6 pb-4 flex items-start justify-between">
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-[#1A1A18]">Design System Playground</h1>
+            <h1 className="text-xl font-bold tracking-tight text-[#1A1A18]">BrandAlchemist</h1>
             <p className="text-xs text-[#8C8984] mt-1 uppercase tracking-widest font-semibold">v1.2.0 Stable Build</p>
           </div>
           <button 
             onClick={resetToDefault} 
-            className="text-xs font-bold uppercase tracking-widest text-[#8C8984] hover:text-[#2D2D2A] mt-1"
+            className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-white text-[#2D2D2A] border border-[#E5E1D9] px-2 py-1.5 rounded-md hover:border-[#5A5A40] transition-colors shadow-sm font-bold uppercase tracking-widest cursor-pointer"
             title="Reset to default"
           >
+            <RotateCcw size={12} strokeWidth={2.5} />
             Reset All
           </button>
         </div>
@@ -128,7 +129,7 @@ export function Controls({ state, savedProjects, saveCurrentProject, loadProject
                   downloadAnchorNode.click();
                   downloadAnchorNode.remove();
                 }}
-                className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-white text-[#2D2D2A] border border-[#E5E1D9] px-2 py-1.5 rounded-md hover:border-[#5A5A40] transition-colors shadow-sm font-bold uppercase tracking-widest"
+                className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-white text-[#2D2D2A] border border-[#E5E1D9] px-2 py-1.5 rounded-md hover:border-[#5A5A40] transition-colors shadow-sm font-bold uppercase tracking-widest cursor-pointer"
                 title="Export JSON"
               >
                 <Download size={12} strokeWidth={2.5} /> JSON
@@ -136,7 +137,7 @@ export function Controls({ state, savedProjects, saveCurrentProject, loadProject
               
               <button 
                 onClick={handleExportImage}
-                className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-white text-[#2D2D2A] border border-[#E5E1D9] px-2 py-1.5 rounded-md hover:border-[#5A5A40] transition-colors shadow-sm font-bold uppercase tracking-widest"
+                className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-white text-[#2D2D2A] border border-[#E5E1D9] px-2 py-1.5 rounded-md hover:border-[#5A5A40] transition-colors shadow-sm font-bold uppercase tracking-widest cursor-pointer"
                 title="Export Image"
               >
                 <ImageIcon size={12} strokeWidth={2.5} /> Image
@@ -144,7 +145,7 @@ export function Controls({ state, savedProjects, saveCurrentProject, loadProject
 
               <button 
                 onClick={saveCurrentProject}
-                className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-[#5A5A40] text-white px-2 py-1.5 rounded-md hover:bg-[#484833] transition-colors shadow-sm font-bold uppercase tracking-widest sm:ml-1"
+                className="flex items-center gap-1 sm:gap-1.5 text-[10px] bg-[#5A5A40] text-white px-2 py-1.5 rounded-md hover:bg-[#484833] transition-colors shadow-sm font-bold uppercase tracking-widest sm:ml-1 cursor-pointer"
                 title="Save Project"
               >
                 <Save size={12} strokeWidth={2.5} /> Save
