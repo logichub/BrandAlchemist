@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# BrandAlchemist
 
-# Run and deploy your AI Studio app
+A UI testing app to experiment with visual design elements (colors, typography, and design styles) and instantly preview the results on a mock landing page.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/105e5cd3-f3b6-408d-9c63-4372f546a22f
+- **Color Palette Generation**: Mix, match, and extract color palettes to define a brand's vibe.
+- **Typography Selection**: Preview Google Fonts in real-time across your design.
+- **Responsive Preview**: Instantly preview your brand's unique aesthetics on a fully responsive mock landing page, supporting both desktop and mobile viewports.
+- **Real-time Engine**: Changes update seamlessly as you tweak colors and typography.
+- **Save Projects**: Manage and save multiple brand experiments locally.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+First, run the development server:
 
+```bash
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
